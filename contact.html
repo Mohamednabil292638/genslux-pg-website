@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gens PG Bangalore. Reach out to Nabil directly for bookings, inquiries, and luxury co-living details.">
+    <title>Contact Us | Gens PG</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1. Sticky Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/favicon.png" alt="GensLux PG Logo" class="nav-logo-img"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary nav-btn">Book Visit</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="contact-hero hero" id="contact-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container text-center">
+                <h1>Get in Touch</h1>
+                <p>We're here to help you secure your perfect luxury living space in Bangalore.</p>
+            </div>
+        </section>
+
+        <!-- 2. CONTACT CARDS SECTION -->
+        <section class="contact-cards-section section container">
+            <div class="section-title">
+                <h2>Direct Contact</h2>
+                <p>Reach out directly to our management for immediate assistance and bookings.</p>
+            </div>
+            <div class="contact-cards-grid">
+                <!-- Phone Card -->
+                <a href="tel:+917010676960" class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>+91 70106 76960</p>
+                    <span>Nabil (Owner)</span>
+                </a>
+                <!-- WhatsApp Card -->
+                <a href="https://wa.me/917010676960" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>+91 70106 76960</p>
+                    <span>Message Us Anytime</span>
+                </a>
+                <!-- Email Card -->
+                <a href="mailto:nabils904343@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>nabils904343@gmail.com</p>
+                    <span>Drop Us a Line</span>
+                </a>
+                <!-- Instagram Card -->
+                <a href="#" class="contact-card">
+                    <div class="contact-icon">📷</div>
+                    <h3>Instagram</h3>
+                    <p>@genspg</p>
+                    <span>Follow our updates</span>
+                </a>
+                <!-- Facebook Card -->
+                <a href="#" class="contact-card">
+                    <div class="contact-icon">📘</div>
+                    <h3>Facebook</h3>
+                    <p>Gens PG Bangalore</p>
+                    <span>Connect with us</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. CONTACT FORM SECTION & 4. GOOGLE MAP SECTION -->
+        <section class="contact-content-section section bg-light">
+            <div class="container">
+                <div class="contact-split-layout">
+                    <!-- Form -->
+                    <div class="contact-form-container">
+                        <h2>Send an Inquiry</h2>
+                        <p>Fill out the form below and our team will get back to you shortly.</p>
+                        <form class="contact-form" id="inquiryForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="room_type">Preferred Room Type</label>
+                                <select id="room_type" name="room_type" required>
+                                    <option value="" disabled selected>Select a room type</option>
+                                    <option value="Twin Sharing">Twin Sharing Suite</option>
+                                    <option value="Triple Sharing">Triple Sharing Room</option>
+                                    <option value="Four Sharing">Four Sharing Room</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message / Questions</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
+                        </form>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="contact-map-container">
+                        <h2>Our Location</h2>
+                        <p>Visit our premium co-living facility in Bangalore.</p>
+                        <div class="map-placeholder">
+                            <!-- Google Maps iframe placeholder -->
+                            <img src="images/gallery/building.png" alt="Map Location Placeholder" class="map-img">
+                            <div class="map-overlay-text">
+                                <h3>Gens PG Bangalore</h3>
+                                <p>123 Startup Avenue, HSR Layout<br>Bangalore, Karnataka 560102</p>
+                                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color:white; color:white; margin-top:1rem;">Get Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <!-- 6. Footer Update -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html"><img src="images/logo/favicon.png" alt="GensLux PG Logo" class="footer-logo-img"></a>
+                <p>Redefining luxury living for gentlemen in Bangalore. Experience comfort, community, and convenience.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Our Rooms</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">House Rules</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>123 Startup Avenue, HSR Layout</p>
+                <p>Bangalore, Karnataka 560102</p>
+                <!-- Clickable Phone -->
+                <p style="margin-top: 0.5rem;">
+                    <a href="tel:+917010676960" style="color: rgba(255,255,255,0.8); transition: color 0.3s ease;">
+                        📞 +91 70106 76960 (Nabil)
+                    </a>
+                </p>
+                <!-- Clickable Email -->
+                <p style="margin-top: 0.5rem;">
+                    <a href="mailto:nabils904343@gmail.com" style="color: rgba(255,255,255,0.8); transition: color 0.3s ease;">
+                        ✉️ nabils904343@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gens PG Bangalore. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <!-- Global Floating WhatsApp Button -->
+    <a href="https://wa.me/917010676960" target="_blank" rel="noopener noreferrer" class="global-floating-whatsapp" aria-label="Chat directly on WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <path fill="#FFF" d="M16.1 2.9c-7.3 0-13.2 5.9-13.2 13.2 0 2.3.6 4.5 1.7 6.4L3 29.1l6.8-1.8c1.9 1 4 1.5 6.3 1.5 7.3 0 13.2-5.9 13.2-13.2S23.4 2.9 16.1 2.9zm0 24.3c-2 0-3.9-.5-5.5-1.5l-.4-.2-4.1 1.1 1.1-4-.2-.4c-1.1-1.7-1.7-3.6-1.7-5.7 0-6.1 5-11 11-11s11 5 11 11-5 11.1-11.2 11.1zm6.1-8.3c-.3-.2-2-.1-2.3-.9-.1-.2-.1-.4-.2-.5s-.2-.2-.5.2c-.3.4-1.2 1.5-1.4 1.8-.2.3-.5.3-.8.2-2.3-1.1-3.6-2-5-4.8-.2-.3 0-.5.2-.6.2-.2.3-.3.5-.5s.3-.4.4-.6c0-.1 0-.3-.1-.5-.1-.3-.6-1.5-.8-2-.2-.5-.5-.4-.6-.4-.1 0-.3 0-.5 0s-.6.2-.9.5c-1 1-2.5 2.5-2.5 6.2 0 3.7 2.6 7.3 3 7.8.4.5 5.3 8.1 12.8 11.3 1.8.8 3.2 1.2 4.3 1.6 1.8.6 3.5.5 4.8.3 1.5-.2 4.7-1.9 5.3-3.8.7-1.9.7-3.5.5-3.8-.3-.2-.6-.4-1-.5z"/>
+        </svg>
+    </a>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" aria-label="Scroll to top" class="scroll-to-top">
+        ?
+    </button>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
